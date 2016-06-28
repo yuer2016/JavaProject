@@ -2,3 +2,5 @@
 .project   
 .settings  
 .svn
+.DS_Store
+/target/
