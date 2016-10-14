@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.yicheng.dao.UserSmsDao">
+
+    <select id="getAll" parameterType="string" resultType="userSmsBean">
+    	SELECT SmsId,UserId,SmsSurplus,Total
+    	FROM tb_UserSms 
+    	WHERE UserId = #{smsId}
+    </select>
+    
+    <update id="updateSmsSurplus" parameterType="map">
+    	UPDATE tb_UserSms SET SmsSurplus = SmsSurplus-#{useCount} where UserId=#{smsId}
+    </update>
+    
+    
+</mapper>
+ 
