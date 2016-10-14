@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	default-autowire="byType"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd"
+	>
+	
+	<bean id="photoService" class="com.yicheng.service.impl.PhotoServiceImpl"></bean>
+	<bean id="image" class="com.yicheng.entity.Image"></bean>
+	
+	<bean id="jPPhotoService" class="com.yicheng.service.impl.JPPhotoServiceImpl"></bean>
+	
+  
+</beans>
